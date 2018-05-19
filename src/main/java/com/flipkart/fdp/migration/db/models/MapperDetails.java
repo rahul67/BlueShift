@@ -49,14 +49,14 @@ public class MapperDetails implements Serializable {
 	private long batchId;
 
 	@Id
-	@Column(name = DBUtils.COL_SRC_PATH, updatable = false, nullable = false, length = 1024)
+	@Column(name = DBUtils.COL_SRC_PATH, updatable = false, nullable = false, length = 767)
 	private String srcPath;
 
 	@Id
 	@Column(name = COL_TASK_ID, updatable = false, nullable = false)
 	private String taskId;
 
-	@Column(name = DBUtils.COL_DEST_PATH, updatable = false, length = 1024)
+	@Column(name = DBUtils.COL_DEST_PATH, updatable = false, length = 767)
 	private String destPath;
 
 	@Column(name = DBUtils.COL_SRC_SIZE, nullable = false)

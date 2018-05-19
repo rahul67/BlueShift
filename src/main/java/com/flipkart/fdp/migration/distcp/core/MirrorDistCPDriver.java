@@ -84,8 +84,8 @@ public class MirrorDistCPDriver extends Configured implements Tool {
 
 		System.out.println("Inclusion File List: "
 				+ MirrorFileInputFormat.getInclusionFileList(configuration));
-		// Setting task timeout to 2 hrs
-		configuration.setLong("mapred.task.timeout", 1000 * 60 * 60 * 2);
+		// Setting task timeout to 6 hrs
+//		configuration.setLong("mapred.task.timeout", 1000 * 60 * 60 * 6);
 
 		populateConfFromDCMConfig();
 
